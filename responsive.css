@@ -1,0 +1,317 @@
+/* ============================================
+   ZUHD ESSENCE — RESPONSIVE ENHANCEMENTS
+   لضمان تجربة مثالية على جميع الأجهزة
+   ============================================ */
+
+/* ========== إعدادات عامة للصور والعناصر ========== */
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* تحسين النقر على العناصر التفاعلية في اللمس */
+button,
+a,
+.cat-card,
+.book-card,
+.nav-link,
+.mobile-link,
+.footer-nav-btn,
+.back-btn,
+.visit-btn {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ========== شاشات صغيرة جداً (هواتف <= 480px) ========== */
+@media (max-width: 480px) {
+  :root {
+    --nav-h: 56px;
+    --radius-md: 18px;
+    --radius-lg: 24px;
+    --radius-xl: 28px;
+  }
+
+  .nav-inner {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 40px 16px 24px;
+  }
+
+  .hero-title-line1 {
+    font-size: clamp(24px, 8vw, 36px);
+  }
+  .hero-title-line2 {
+    font-size: clamp(30px, 9vw, 48px);
+  }
+
+  .hero-stats {
+    gap: 16px;
+  }
+  .stat-num {
+    font-size: 20px;
+  }
+  .stat-label {
+    font-size: 9px;
+  }
+
+  .ornament {
+    gap: 10px;
+  }
+  .orn-text {
+    font-size: 10px;
+  }
+
+  .cat-grid {
+    gap: 12px;
+    padding: 0 12px 32px;
+  }
+  .cat-card {
+    padding: 20px 16px 16px;
+  }
+  .cat-emoji {
+    font-size: 32px;
+  }
+  .cat-name {
+    font-size: 18px;
+  }
+  .cat-tagline {
+    font-size: 11px;
+  }
+  .cat-count {
+    font-size: 10px;
+    padding: 2px 10px;
+  }
+  .cat-books-preview span {
+    font-size: 9px;
+  }
+
+  .home-quote {
+    margin: 0 12px 40px;
+    padding: 24px 20px;
+  }
+  .quote-mark {
+    font-size: 60px;
+    top: -16px;
+    left: 16px;
+  }
+  .home-quote p {
+    font-size: 14px;
+  }
+  .home-quote cite {
+    font-size: 11px;
+  }
+
+  .books-header {
+    padding: 24px 16px 16px;
+    gap: 16px;
+  }
+  .back-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  .books-section-icon {
+    font-size: 28px;
+  }
+  .books-section-title {
+    font-size: 20px;
+  }
+  .books-section-sub {
+    font-size: 11px;
+  }
+
+  .books-grid {
+    gap: 12px;
+    padding: 0 12px 40px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .book-card {
+    padding: 16px 12px 12px;
+  }
+  .book-cover {
+    width: 60px;
+    height: 80px;
+  }
+  .book-title {
+    font-size: 12px;
+  }
+  .book-number {
+    font-size: 9px;
+  }
+  .visit-btn {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+  .visit-btn svg {
+    width: 10px;
+  }
+
+  .footer-top {
+    padding: 32px 16px 24px;
+    gap: 24px;
+  }
+  .footer-logo svg {
+    width: 32px;
+  }
+  .footer-logo-main {
+    font-size: 16px;
+  }
+  .footer-logo-sub {
+    font-size: 9px;
+  }
+  .footer-slogan-box {
+    padding: 14px;
+  }
+  .footer-slogan {
+    font-size: 11px;
+  }
+  .footer-col-title {
+    font-size: 12px;
+    margin-bottom: 14px;
+  }
+  .footer-nav-btn {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+  .identity-item {
+    padding: 8px 10px;
+  }
+  .identity-key {
+    font-size: 9px;
+  }
+  .identity-val {
+    font-size: 10px;
+  }
+  .footer-bottom {
+    padding: 16px 16px 24px;
+    gap: 8px;
+  }
+  .footer-copy,
+  .footer-made {
+    font-size: 10px;
+  }
+}
+
+/* ========== شاشات متوسطة (تابلت عمودي 481px - 768px) ========== */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cat-grid {
+    gap: 20px;
+  }
+  .cat-card {
+    padding: 32px 24px 24px;
+  }
+  .books-grid {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+  .hero-title-line2 {
+    font-size: clamp(44px, 10vw, 60px);
+  }
+  .footer-top {
+    gap: 36px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ========== شاشات تابلت أفقية و حواسيب صغيرة (769px - 1024px) ========== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .cat-grid {
+    max-width: 700px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-identity-col {
+    grid-column: auto;
+  }
+}
+
+/* ========== شاشات كبيرة (1025px - 1366px) ========== */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .books-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== شاشات عريضة جداً (≥ 1600px) ========== */
+@media (min-width: 1600px) {
+  .nav-inner,
+  .books-header,
+  .books-grid,
+  .footer-top,
+  .footer-divider,
+  .footer-bottom {
+    max-width: 1400px;
+  }
+  .hero {
+    max-width: 900px;
+  }
+  .cat-grid {
+    max-width: 1000px;
+  }
+  .books-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 32px;
+  }
+  .book-card {
+    padding: 28px 22px 22px;
+  }
+  .book-cover {
+    width: 100px;
+    height: 130px;
+  }
+  .book-title {
+    font-size: 16px;
+  }
+  .visit-btn {
+    font-size: 13px;
+  }
+}
+
+/* ========== تحسينات للأجهزة التي تدعم الـ hover (ماوس) ========== */
+@media (hover: hover) {
+  .cat-card:hover,
+  .book-card:hover {
+    transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
+  }
+}
+
+/* ========== تحسينات للشاشات عالية الدقة Retina ========== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .cat-card,
+  .book-card {
+    will-change: transform;
+  }
+}
+
+/* ========== منع التمرير الأفقي غير المرغوب ========== */
+body {
+  overflow-x: hidden;
+}
+
+/* ========== تحسينات إضافية للهواتف في الوضع الأفقي ========== */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero {
+    padding: 30px 16px 20px;
+  }
+  .cat-grid {
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+  .home-quote {
+    margin-bottom: 40px;
+  }
+  .navbar {
+    --nav-h: 56px;
+  }
+}

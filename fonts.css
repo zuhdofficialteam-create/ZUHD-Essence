@@ -1,0 +1,52 @@
+/* ============================================
+   ZUHD ESSENCE — PROFESSIONAL FONTS
+   Inter (Latin, numbers) + Cairo (Arabic, Latin)
+   ============================================ */
+
+/* استيراد خط Inter من Google Fonts (للاتينية) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap');
+
+/* استيراد خط Cairo (يدعم العربية واللاتينية بشكل ممتاز) */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
+/* تعيين الخطوط الأساسية */
+body,
+button,
+input,
+textarea,
+.nav-link,
+.mobile-link,
+.cat-name,
+.cat-tagline,
+.visit-btn,
+.footer-nav-btn,
+.identity-val,
+.footer-slogan,
+.book-title,
+.hero-desc,
+.home-quote p,
+.lock-card-title,
+.lock-tab {
+  font-family: 'Cairo', 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* للعناوين والأرقام البارزة نعطي وزناً أكبر ونستخدم Inter كأساس للأرقام */
+.hero-title-line2,
+.stat-num,
+.book-number,
+.nav-brand-main,
+.footer-logo-main,
+.books-section-title,
+.cat-name {
+  font-family: 'Inter', 'Cairo', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* للاقتباسات والحروف المائلة نستخدم Cairo بشكل أساسي */
+.quote-mark,
+.home-quote cite {
+  font-family: 'Cairo', serif;
+  font-style: italic;
+}
